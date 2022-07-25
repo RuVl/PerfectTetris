@@ -1,0 +1,165 @@
+:root {
+    --score-gradient: -45deg;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+    background-color: #22222200;
+}
+
+.game {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-game {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+    height: 100%;
+}
+
+.inner-game > div {
+    height: 75%;
+}
+
+#main-field {
+    position: relative;
+    height: 100%;
+    align-self: center;
+}
+
+#game-over {
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    left: 0;
+    color: #fff;
+    font-weight: 900;
+    font-family: Arial, sans-serif;
+    font-size: 4.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 6rem;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 1.5s ease-out;
+    text-shadow:
+            0 0 20px #fefcc9,
+            5px 5px 30px #feec85,
+            0 -15px 40px #ffae34,
+            0 20px 50px #ec760c,
+            0 20px 60px #cd4606,
+            0 20px 70px #973716;
+}
+
+#game-over > div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #222222;
+    opacity: .5;
+}
+
+.info {
+    width: 20vmin;
+}
+
+#extra-field {
+    margin-bottom: 25px;
+    height: 20vmin;
+}
+
+#score {
+    background: linear-gradient(var(--score-gradient), #17f5c2 0%, #f906d6 100%);
+    font-weight: 600;
+    color: #eee;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    font-size: 1.4em;
+    text-shadow: 5px 4px 10px #351b6c;
+}
+
+#FAQ {
+    /*display: none;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    position: absolute;
+    border-radius: 2.5rem;
+    margin: -20px;
+    padding: 20px;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#FAQ > span {
+    text-align: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: #000;
+    padding: 20px 0;
+    margin: 20px auto;
+    font-family: Garamond, sans-serif;
+    font-size: 2rem;
+    text-shadow:
+            0 0 15px #fff,
+            0 0 20px #fff,
+            0 0 30px #fff,
+            0 0 40px #C53ED2,
+            0 0 50px #C53ED2,
+            0 0 60px #C53ED2;
+}
+
+#FAQ > span:nth-child(2) {
+    font-size: 1.25rem;
+    position: absolute;
+    bottom: 0;
+}
+
+#fireworks {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    z-index: -1;
+    background-color: #222;
+}
+
+#TETRIS {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    opacity: 0;  /* .5 */
+    transition: opacity 1.5s ease-out;
+}
+
+.TETRIS {
+    text-align: center;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    font-size: 20rem;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 10px 10px 0 #ffd217, 20px 20px 0 #5ac7ff, 30px 30px 0 #ffd217, 40px 40px 0 #5ac7ff;
+}

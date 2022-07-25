@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Tetris</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="images/icon.png">
+</head>
+<body>
+<div class="game">
+	<div id="TETRIS">
+		<span class="TETRIS">TETRIS</span>
+	</div>
+	<div class="inner-game">
+		<div id="game-over">Game<br>Over<div></div></div>
+		<div class="main">
+			<div id="main-field">
+				<canvas id="canvas">Ваш браузер не поддерживает Canvas</canvas>
+			</div>
+		</div>
+		<div class="info">
+			<div id="extra-field">
+				<canvas id="next-figure">Ваш браузер не поддерживает Canvas</canvas>
+			</div>
+			<div id="score">Очки: 0</div>
+		</div>
+		<div id="FAQ">
+			<span>Нажмите пробел<br>чтобы начать/перезапустить игру</span>
+			<span>Нажмите "p" для паузы</span>
+		</div>
+	</div>
+</div>
+<canvas id="fireworks"></canvas>
+<script src="scripts/fireworks.js"></script>
+<script src="scripts/game.js"></script>
+</body>
+</html>
